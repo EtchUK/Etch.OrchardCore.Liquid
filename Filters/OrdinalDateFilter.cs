@@ -17,26 +17,27 @@ namespace Etch.OrchardCore.Liquid.Filters
 
             var date = (DateTime)input.ToObjectValue();
 
-            var dayString = string.Empty;
+            return new ValueTask<FluidValue>(new StringValue(date.ToString($"MMMM d{CalculateDateSuffix(date)} yyyy")));
+        }
 
+        private string CalculateDateSuffix(DateTime date)
+        {
             if (date.Day == 1 || date.Day == 21 || date.Day == 31)
             {
-                dayString = "\\s\\t";
+                return "\\s\\t";
             }
             else if (date.Day == 2 || date.Day == 22)
             {
-                dayString = "\\n\\d";
+                return "\\n\\d";
             }
             else if (date.Day == 3 || date.Day == 23)
             {
-                dayString = "\\r\\d";
+                return "\\r\\d";
             }
             else
             {
-                dayString = "\\t\\h";
+                return "\\t\\h";
             }
-
-            return new ValueTask<FluidValue>(new StringValue(date.ToString($"MMMM d{dayString} yyyy")));
         }
     }
 }
