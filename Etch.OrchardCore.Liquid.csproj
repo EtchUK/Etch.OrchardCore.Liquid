@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Version>0.0.1-rc2</Version>
+    <PackageId>Etch.OrchardCore.Liquid</PackageId>
+    <Title>Etch Liquid Filters</Title>
+    <Authors>Etch UK Ltd.</Authors>
+    <Description>A collection of helpful Liquid filters</Description>
+    <PackageTags>orchardcore;etchuk</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.DisplayManagement.Liquid" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Indexing" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Liquid.Abstractions" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Menu" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc2-13450" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>
