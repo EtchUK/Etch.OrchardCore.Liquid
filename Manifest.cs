@@ -5,6 +5,6 @@ using OrchardCore.Modules.Manifest;
     Category = "Content",
     Description = "A collection of helpful Liquid filters",
     Name = "Etch Liquid Filters",
-    Version = "0.0.1",
+    Version = "$(VersionNumber)",
     Website = "https://etchuk.com"
 )]

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>0.0.1-rc2</Version>
+    <Version>$(VersionNumber)</Version>
     <PackageId>Etch.OrchardCore.Liquid</PackageId>
     <Title>Etch Liquid Filters</Title>
     <Authors>Etch UK Ltd.</Authors>
