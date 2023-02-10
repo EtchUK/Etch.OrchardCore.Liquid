@@ -8,7 +8,7 @@ namespace Etch.OrchardCore.Liquid.Filters
 {
     public class OrdinalDateFilter : ILiquidFilter
     {
-        public ValueTask<FluidValue> ProcessAsync(FluidValue input, FilterArguments arguments, TemplateContext ctx)
+        public ValueTask<FluidValue> ProcessAsync(FluidValue input, FilterArguments arguments, LiquidTemplateContext context)
         {
             if (input.IsNil())
             {
