@@ -13,6 +13,7 @@ namespace Etch.OrchardCore.Liquid
         public override void ConfigureServices(IServiceCollection services)
         {
             services.AddLiquidFilter<OrdinalDateFilter>("ordinal_date");
+            services.AddLiquidFilter<OrdinalDayFilter>("ordinal_day");
 
             services.Configure<TemplateOptions>(o =>
             {
