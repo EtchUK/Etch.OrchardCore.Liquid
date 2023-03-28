@@ -50,3 +50,16 @@ Format a date into a Month Date Year format, providing the correct suffix for th
 | 11/06/2021 14:11:57 | {{ 28/06/2021 14:11:57 \| ordinal_date }} | June 11th 2021 |
 
 This filter also supports being passed date fields from the content item itself, such as `{{ Model.Content.CreatedUtc | ordinal_date }}`
+
+### Ordinal Day
+
+Return only the day part of a date, complete with the correct suffix for the date.
+
+| Input               | Usage                                    | Output |
+| ------------------- | ---------------------------------------- | ------ |
+| 01/06/2021 14:11:57 | {{ 01/12/2020 14:11:57 \| ordinal_day }} | 1st    |
+| 22/06/2021 14:11:57 | {{ 28/06/2021 14:11:57 \| ordinal_day }} | 22nd   |
+| 03/06/2021 14:11:57 | {{ 28/06/2021 14:11:57 \| ordinal_day }} | 3rd    |
+| 11/06/2021 14:11:57 | {{ 28/06/2021 14:11:57 \| ordinal_day }} | 11th   |
+
+This filter also supports being passed date fields from the content item itself, such as `{{ Model.Content.CreatedUtc | ordinal_day }}`
